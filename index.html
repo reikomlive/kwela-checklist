@@ -449,6 +449,18 @@
             display: inline-block;
         }
 
+        /* List styles for header */
+        .header-meta ul {
+            list-style-position: inside;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .header-meta li {
+            display: flex;
+            align-items: center;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .header h1 {
@@ -458,6 +470,15 @@
             .header-meta {
                 flex-direction: column;
                 gap: 12px;
+                align-items: flex-start;
+            }
+
+            .header-meta ul {
+                width: 100%;
+            }
+
+            .header-meta li {
+                justify-content: flex-start;
             }
 
             .container {
@@ -517,11 +538,11 @@
                 </div>
             </div>
         </div>
-        <ll class="header-meta" style="margin-top: 32px; font-size: 14px;">
-    <li>Mobile Money & Cash first </li>
+        <ul class="header-meta" style="margin-top: 32px; font-size: 14px;">
+    <li>Mobile Money & Cash first</li>
     <li>Allows local individuals to sell</li>
-    <li>Clean Architecture(RiverPod, firebase, And Supabase)</li>
-</ll>
+    <li>Clean Architecture (RiverPod, Firebase, Supabase)</li>
+</ul>
     </div>
 
     <!-- Main Content -->
